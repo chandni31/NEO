@@ -4,8 +4,10 @@ To start kafka
 
 kafkafolder/ bin/window
 cmd zookeeper-server-start.bat ../../config/zookeeper.properties
-cmd kafka-server-start.bat ../../config/server.properties
+cmd kafka-server-start.bat ../../config/server.properties 
+
 cmd kafka-run-class.bat kafka.tools.GetOffsetShell --broker-list localhost:9092,127.0.0.1:9092, --topic topic-Name --time -1
+
 
 To deploy minikube
 
